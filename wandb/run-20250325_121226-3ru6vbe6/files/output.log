@@ -1,0 +1,107 @@
+Sequence 00: Found 4541 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/00/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/00_rel_poses.npy
+Sequence 02: Found 4661 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/02/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/02_rel_poses.npy
+Sequence 08: Found 4071 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/08/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/08_rel_poses.npy
+Sequence 09: Found 1591 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/09/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/09_rel_poses.npy
+Sequence 03: Found 801 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/03/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/03_rel_poses.npy
+Sequence 04: Found 271 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/04/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/04_rel_poses.npy
+Sequence 05: Found 2761 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/05/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/05_rel_poses.npy
+Sequence 06: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/06/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/06_rel_poses.npy
+Sequence 07: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/07/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/07_rel_poses.npy
+Sequence 10: Found 1201 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/10/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/10_rel_poses.npy
+Train Epoch 1/5: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 464/464 [03:06<00:00,  2.49it/s, loss=0.00852, t_loss=0.00598, r_loss=2.54e-5]
+Val Epoch 1/5:   0%|                                                                                                                  | 0/225 [00:05<?, ?it/s, loss=0.0107, t_loss=0.00738, r_loss=3.34e-5]
+Val Batch 0 - Pred: tensor([[-2.6075e-03, -2.0923e-02,  1.1105e+00,  2.6300e-03, -2.7112e-03,
+         -6.4385e-04],
+        [-3.2935e-03, -1.9629e-02,  1.0607e+00,  3.9542e-03,  1.7642e-03,
+         -5.5408e-05],
+        [-5.2061e-03, -1.9203e-02,  1.0430e+00,  4.6646e-03,  2.9790e-03,
+          3.3928e-04],
+        [-4.4837e-03, -1.8857e-02,  1.0521e+00,  6.1733e-03,  6.4572e-03,
+          3.8628e-04],
+        [-3.1536e-03, -1.8089e-02,  1.0256e+00,  6.4620e-03,  8.5426e-03,
+          3.5613e-04],
+        [-2.3644e-03, -2.1699e-02,  1.0808e+00,  7.1239e-03,  9.8591e-03,
+          8.2361e-04],
+        [-5.4434e-03, -2.2006e-02,  1.0427e+00,  6.6396e-03,  8.9715e-03,
+          9.9298e-04],
+        [-5.8904e-03, -2.2382e-02,  1.0159e+00,  6.2263e-03,  9.0763e-03,
+          1.4809e-03],
+        [-6.1911e-03, -2.0622e-02,  1.0149e+00,  5.8480e-03,  8.0829e-03,
+          7.6540e-04]], device='cuda:0'), GT: tensor([[-1.1011e-02, -1.7122e-02,  9.6171e-01,  4.3260e-03,  1.5366e-03,
+         -7.0557e-04],
+        [-7.4530e-03, -1.1757e-02,  9.6322e-01,  8.9707e-04,  5.9451e-04,
+          2.0981e-03],
+        [-1.6158e-02, -2.5323e-02,  9.6328e-01, -4.3119e-03,  8.0094e-05,
+          1.4818e-03],
+        [-1.5758e-02, -3.0697e-02,  9.6025e-01, -6.4609e-03, -7.4181e-04,
+          1.4937e-03],
+        [-1.0254e-02, -3.2451e-02,  9.5806e-01,  8.7465e-04, -1.3854e-03,
+          4.4226e-03],
+        [-1.1496e-02, -2.6897e-02,  9.3229e-01,  3.0391e-03, -1.0773e-03,
+          2.7375e-03],
+        [-1.0029e-02, -1.0089e-02,  9.3743e-01,  3.0616e-03, -8.3619e-04,
+          5.6179e-04],
+        [-1.2426e-02, -1.2804e-02,  9.2981e-01,  6.4307e-04, -8.1168e-04,
+         -6.2762e-04],
+        [-9.6327e-03, -9.2086e-03,  9.2938e-01, -2.3173e-03, -9.2578e-04,
+         -6.4988e-04]], device='cuda:0')
+Epoch 1: Scale factor = 1.0000
+Epoch 1: Train Loss=0.0263 (t=0.0140, r=0.0001), Val Loss=0.0395 (t=0.0293, r=0.0001), t_rel%=0.00, r_rel°/100m=0.45
+Train Epoch 2/5: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 464/464 [03:07<00:00,  2.48it/s, loss=0.00364, t_loss=0.00127, r_loss=2.37e-5]
+Val Epoch 2/5:   0%|                                                                                                                   | 0/225 [00:04<?, ?it/s, loss=0.0168, t_loss=0.0161, r_loss=7.55e-6]
+Val Batch 0 - Pred: tensor([[-9.0689e-03, -2.1272e-02,  1.1653e+00,  1.3149e-03, -4.8685e-03,
+          1.8303e-04],
+        [-1.0780e-02, -2.1663e-02,  1.1618e+00,  1.3117e-03, -3.9931e-03,
+          5.9155e-04],
+        [-1.2458e-02, -2.1058e-02,  1.1147e+00,  1.3011e-03, -3.9653e-03,
+          4.9552e-04],
+        [-1.0364e-02, -2.2903e-02,  1.1600e+00,  3.2243e-03, -1.7667e-03,
+          3.3226e-04],
+        [-9.5983e-03, -2.3022e-02,  1.1469e+00,  2.8780e-03, -6.6064e-04,
+          1.0760e-04],
+        [-8.8259e-03, -2.5339e-02,  1.1582e+00,  3.8343e-03,  4.6610e-04,
+         -5.9530e-04],
+        [-1.0252e-02, -2.4971e-02,  1.0993e+00,  3.3630e-03,  4.5038e-04,
+         -9.3195e-04],
+        [-1.0609e-02, -2.5924e-02,  1.0960e+00,  3.2009e-03,  9.8659e-04,
+         -8.0858e-04],
+        [-1.1910e-02, -2.5451e-02,  1.1266e+00,  3.5540e-03,  5.5678e-04,
+         -8.5521e-04]], device='cuda:0'), GT: tensor([[-1.1011e-02, -1.7122e-02,  9.6171e-01,  4.3260e-03,  1.5366e-03,
+         -7.0557e-04],
+        [-7.4530e-03, -1.1757e-02,  9.6322e-01,  8.9707e-04,  5.9451e-04,
+          2.0981e-03],
+        [-1.6158e-02, -2.5323e-02,  9.6328e-01, -4.3119e-03,  8.0094e-05,
+          1.4818e-03],
+        [-1.5758e-02, -3.0697e-02,  9.6025e-01, -6.4609e-03, -7.4181e-04,
+          1.4937e-03],
+        [-1.0254e-02, -3.2451e-02,  9.5806e-01,  8.7465e-04, -1.3854e-03,
+          4.4226e-03],
+        [-1.1496e-02, -2.6897e-02,  9.3229e-01,  3.0391e-03, -1.0773e-03,
+          2.7375e-03],
+        [-1.0029e-02, -1.0089e-02,  9.3743e-01,  3.0616e-03, -8.3619e-04,
+          5.6179e-04],
+        [-1.2426e-02, -1.2804e-02,  9.2981e-01,  6.4307e-04, -8.1168e-04,
+         -6.2762e-04],
+        [-9.6327e-03, -9.2086e-03,  9.2938e-01, -2.3173e-03, -9.2578e-04,
+         -6.4988e-04]], device='cuda:0')
+Epoch 2: Scale factor = 1.0000
+Epoch 2: Train Loss=0.0048 (t=0.0021, r=0.0000), Val Loss=0.0415 (t=0.0338, r=0.0001), t_rel%=0.00, r_rel°/100m=0.45
+Train Epoch 3/5:   1%|▋                                                                                                      | 3/464 [00:06<17:02,  2.22s/it, loss=0.00773, t_loss=0.00671, r_loss=1.01e-5]
+Traceback (most recent call last):
+  File "train.py", line 183, in <module>
+    train("config.yaml")
+  File "train.py", line 115, in train
+    t_loss, r_loss = compute_component_losses(pred_poses, rel_poses_euler)
+  File "train.py", line 81, in compute_component_losses
+    return t_loss.item(), r_loss.item()
+KeyboardInterrupt

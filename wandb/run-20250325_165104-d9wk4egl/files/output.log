@@ -1,0 +1,50 @@
+Sequence 00: Found 4541 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/00/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/00_rel_poses.npy
+Sequence 02: Found 4661 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/02/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/02_rel_poses.npy
+Sequence 08: Found 4071 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/08/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/08_rel_poses.npy
+Sequence 09: Found 1591 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/09/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/09_rel_poses.npy
+Loading precomputed image statistics...
+Image statistics loaded.
+Sequence 03: Found 801 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/03/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/03_rel_poses.npy
+Sequence 04: Found 271 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/04/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/04_rel_poses.npy
+Sequence 05: Found 2761 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/05/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/05_rel_poses.npy
+Sequence 06: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/06/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/06_rel_poses.npy
+Sequence 07: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/07/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/07_rel_poses.npy
+Sequence 10: Found 1201 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/10/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/10_rel_poses.npy
+Loading precomputed image statistics...
+Image statistics loaded.
+Train Epoch 1/50: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 928/928 [01:32<00:00, 10.03it/s, loss=0.0644, t_loss=0.0404, r_loss=6.24e-5]
+Val Epoch 1/50: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 451/451 [00:28<00:00, 16.10it/s, loss=0.121, t_loss=0.2, r_loss=1.47e-5]
+Val Batch 0 - Pred: tensor([[ 1.8038e-03, -1.2769e-02,  5.3342e-01,  6.6474e-03, -2.1604e-03,
+          4.5068e-03],
+        [-6.3251e-04, -2.3907e-02,  7.9576e-01,  5.4010e-03, -5.4336e-03,
+          3.3098e-03],
+        [-2.5488e-03, -3.0804e-02,  9.7024e-01,  1.0185e-02, -2.3841e-03,
+          2.4177e-03],
+        [-4.9275e-03, -3.6078e-02,  1.0890e+00,  1.2088e-02,  1.7358e-03,
+          6.2265e-04]], device='cuda:0'), GT: tensor([[-1.1011e-02, -1.7122e-02,  9.6171e-01,  4.3260e-03,  1.5366e-03,
+         -7.0557e-04],
+        [-7.4530e-03, -1.1757e-02,  9.6322e-01,  8.9707e-04,  5.9451e-04,
+          2.0981e-03],
+        [-1.6158e-02, -2.5323e-02,  9.6328e-01, -4.3119e-03,  8.0094e-05,
+          1.4818e-03],
+        [-1.5758e-02, -3.0697e-02,  9.6025e-01, -6.4609e-03, -7.4181e-04,
+          1.4937e-03]], device='cuda:0')
+Epoch 1: Number of poses - Pred: 7212, GT: 7212
+Traceback (most recent call last):
+  File "train.py", line 215, in <module>
+    train("config.yaml")
+  File "train.py", line 182, in train
+    pred_rel_poses[b, s, 3:] = R.flatten()
+  File "/home/krkavinda/Fusion-env/lib/python3.8/site-packages/torch/_tensor.py", line 1085, in __array__
+    return self.numpy().astype(dtype, copy=False)
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

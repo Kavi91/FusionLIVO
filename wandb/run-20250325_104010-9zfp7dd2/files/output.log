@@ -1,0 +1,31 @@
+Sequence 00: Found 4541 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/00/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/00_rel_poses.npy
+Sequence 02: Found 4661 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/02/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/02_rel_poses.npy
+Sequence 08: Found 4071 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/08/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/08_rel_poses.npy
+Sequence 09: Found 1591 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/09/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/09_rel_poses.npy
+Sequence 03: Found 801 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/03/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/03_rel_poses.npy
+Sequence 04: Found 271 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/04/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/04_rel_poses.npy
+Sequence 05: Found 2761 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/05/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/05_rel_poses.npy
+Sequence 06: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/06/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/06_rel_poses.npy
+Sequence 07: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/07/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/07_rel_poses.npy
+Sequence 10: Found 1201 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/10/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/10_rel_poses.npy
+Epoch 1/5: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 929/929 [00:38<00:00, 24.42it/s, loss=0.000512]
+Epoch 1: Train Loss=0.0041, Val Loss=0.0151, ATE=0.0446, RPE=0.0000, t_rel%=219.56, r_rel°=0.00
+Epoch 2/5: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 929/929 [00:39<00:00, 23.54it/s, loss=0.00115]
+Epoch 2: Train Loss=0.0015, Val Loss=0.0153, ATE=0.0461, RPE=0.0000, t_rel%=263.86, r_rel°=0.00
+Epoch 3/5: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 929/929 [00:40<00:00, 23.13it/s, loss=0.000528]
+Epoch 3: Train Loss=0.0010, Val Loss=0.0151, ATE=0.0453, RPE=0.0000, t_rel%=249.42, r_rel°=0.00
+Epoch 4/5: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 929/929 [00:39<00:00, 23.47it/s, loss=0.000457]
+Epoch 4: Train Loss=0.0007, Val Loss=0.0147, ATE=0.0453, RPE=0.0000, t_rel%=267.00, r_rel°=0.00
+Epoch 5/5: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 929/929 [00:39<00:00, 23.60it/s, loss=0.000631]
+Epoch 5: Train Loss=0.0007, Val Loss=0.0145, ATE=0.0444, RPE=0.0000, t_rel%=248.45, r_rel°=0.00
+Model saved to stereo_deepvo.pth

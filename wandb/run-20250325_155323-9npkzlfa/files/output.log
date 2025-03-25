@@ -1,0 +1,18 @@
+Sequence 00: Found 4541 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/00/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/00_rel_poses.npy
+Sequence 02: Found 4661 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/02/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/02_rel_poses.npy
+Sequence 08: Found 4071 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/08/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/08_rel_poses.npy
+Sequence 09: Found 1591 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/09/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/09_rel_poses.npy
+Traceback (most recent call last):
+  File "train.py", line 129, in <module>
+    train("config.yaml")
+  File "train.py", line 32, in train
+    train_dataset = DataManager(cfg, mode="train", monocular=True)  # Pass cfg instead of config
+  File "/home/krkavinda/FusionLIVO/data_manager.py", line 19, in __init__
+    self.data = self._load_data()
+  File "/home/krkavinda/FusionLIVO/data_manager.py", line 60, in _load_data
+    self.imgs = np.zeros((self.num_total_imgs, 3, self.img_height, self.img_width), dtype=np.float32)
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 92.8 GiB for an array with shape (74240, 3, 184, 608) and data type float32

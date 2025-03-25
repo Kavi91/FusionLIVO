@@ -1,0 +1,45 @@
+Sequence 00: Found 4541 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/00/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/00_rel_poses.npy
+Sequence 02: Found 4661 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/02/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/02_rel_poses.npy
+Sequence 08: Found 4071 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/08/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/08_rel_poses.npy
+Sequence 09: Found 1591 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/09/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/09_rel_poses.npy
+Sequence 03: Found 801 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/03/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/03_rel_poses.npy
+Sequence 04: Found 271 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/04/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/04_rel_poses.npy
+Sequence 05: Found 2761 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/05/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/05_rel_poses.npy
+Sequence 06: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/06/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/06_rel_poses.npy
+Sequence 07: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/07/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/07_rel_poses.npy
+Sequence 10: Found 1201 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/10/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/10_rel_poses.npy
+Train Epoch 1/5: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 928/928 [01:31<00:00, 10.10it/s, loss=0.00752, t_loss=0.005, r_loss=2.53e-5]
+Val Epoch 1/5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 63/63 [00:04<00:00, 13.33it/s, loss=0.097, t_loss=0.0968, r_loss=2.14e-6]
+Val Batch 0 - Pred: tensor([[-2.5226e-03, -2.0295e-02,  1.1918e+00,  1.9861e-03, -3.9631e-03,
+         -9.5329e-04],
+        [-1.0708e-03, -1.9931e-02,  1.1524e+00,  2.8654e-03, -4.9105e-03,
+          5.3896e-04],
+        [-1.5077e-03, -1.9046e-02,  1.1162e+00,  2.5240e-03, -5.1594e-03,
+          1.0351e-03],
+        [-2.3434e-03, -1.8493e-02,  1.1238e+00,  2.3629e-03, -4.9145e-03,
+          9.2414e-04]], device='cuda:0'), GT: tensor([[-1.1011e-02, -1.7122e-02,  9.6171e-01,  4.3260e-03,  1.5366e-03,
+         -7.0557e-04],
+        [-7.4530e-03, -1.1757e-02,  9.6322e-01,  8.9707e-04,  5.9451e-04,
+          2.0981e-03],
+        [-1.6158e-02, -2.5323e-02,  9.6328e-01, -4.3119e-03,  8.0094e-05,
+          1.4818e-03],
+        [-1.5758e-02, -3.0697e-02,  9.6025e-01, -6.4609e-03, -7.4181e-04,
+          1.4937e-03]], device='cuda:0')
+Epoch 1: Train Loss=0.0185 (t=0.0107, r=0.0001), Val Loss=0.0275 (t=0.0243, r=0.0000), t_rel%=14893.80, r_rel°/100m=71.81
+Train Epoch 2/5:  17%|█████████████████▋                                                                                    | 161/928 [00:17<01:23,  9.15it/s, loss=0.00616, t_loss=0.00456, r_loss=1.6e-5]
+Traceback (most recent call last):
+  File "train.py", line 199, in <module>
+    train("config.yaml")
+  File "train.py", line 116, in train
+    for left_imgs, rel_poses, rel_poses_euler in train_bar:
+KeyboardInterrupt

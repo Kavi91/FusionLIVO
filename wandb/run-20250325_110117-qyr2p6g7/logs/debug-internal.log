@@ -1,0 +1,15 @@
+{"time":"2025-03-25T11:01:17.907486331+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/krkavinda/FusionLIVO/wandb/run-20250325_110117-qyr2p6g7/logs/debug-core.log"}
+{"time":"2025-03-25T11:01:18.010411263+02:00","level":"INFO","msg":"created new stream","id":"qyr2p6g7"}
+{"time":"2025-03-25T11:01:18.010465878+02:00","level":"INFO","msg":"stream: started","id":"qyr2p6g7"}
+{"time":"2025-03-25T11:01:18.010529528+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"qyr2p6g7"}
+{"time":"2025-03-25T11:01:18.010584619+02:00","level":"INFO","msg":"handler: started","stream_id":"qyr2p6g7"}
+{"time":"2025-03-25T11:01:18.010639324+02:00","level":"INFO","msg":"sender: started","stream_id":"qyr2p6g7"}
+{"time":"2025-03-25T11:01:18.345159208+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-25T11:05:22.69170256+02:00","level":"INFO","msg":"stream: closing","id":"qyr2p6g7"}
+{"time":"2025-03-25T11:05:22.691732675+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-25T11:05:22.692735933+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-25T11:05:23.361677484+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-25T11:05:23.630284742+02:00","level":"INFO","msg":"handler: closed","stream_id":"qyr2p6g7"}
+{"time":"2025-03-25T11:05:23.630343359+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qyr2p6g7"}
+{"time":"2025-03-25T11:05:23.630365824+02:00","level":"INFO","msg":"sender: closed","stream_id":"qyr2p6g7"}
+{"time":"2025-03-25T11:05:23.630447788+02:00","level":"INFO","msg":"stream: closed","id":"qyr2p6g7"}

@@ -46,11 +46,10 @@ def compute_and_save_rel_poses(config_path):
         rel_poses = []
         for i in range(len(poses) - 1):
             pose_diff = torch.inverse(poses[i]) @ poses[i+1]
-            t = pose_diff[:3, 3]
-            r = torch.from_numpy(rotmat_to_euler(pose_diff[:3, :3])).float()
-            r = torch.remainder(r + np.pi, 2 * np.pi) - np.pi
-            rel_poses.append(torch.cat([t, r]))
-        rel_poses = torch.stack(rel_poses).numpy()
+            t = pose_diff[:3, 3].numpy()
+            R = pose_diff[:3, :3].numpy()
+            rel_poses.append(np.concatenate([t, R.flatten()]))  # [t_x, t_y, t_z, R_11, ..., R_33]
+        rel_poses = np.array(rel_poses)
         
         np.save(rel_pose_file, rel_poses)
         print(f"Saved relative poses for {seq} to {rel_pose_file} with shape {rel_poses.shape}")

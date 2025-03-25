@@ -1,0 +1,19 @@
+{"time":"2025-03-25T10:38:27.726914299+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/krkavinda/FusionLIVO/wandb/run-20250325_103827-krf7aewv/logs/debug-core.log"}
+{"time":"2025-03-25T10:38:27.829449224+02:00","level":"INFO","msg":"created new stream","id":"krf7aewv"}
+{"time":"2025-03-25T10:38:27.829481556+02:00","level":"INFO","msg":"stream: started","id":"krf7aewv"}
+{"time":"2025-03-25T10:38:27.829583816+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"krf7aewv"}
+{"time":"2025-03-25T10:38:27.829640319+02:00","level":"INFO","msg":"handler: started","stream_id":"krf7aewv"}
+{"time":"2025-03-25T10:38:27.829749459+02:00","level":"INFO","msg":"sender: started","stream_id":"krf7aewv"}
+{"time":"2025-03-25T10:38:28.18693371+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-25T10:39:29.015544311+02:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/kavindamadhujith-University%20of%20Oulu3545/FusionLIVO/krf7aewv/file_stream"}
+{"time":"2025-03-25T10:39:29.015580899+02:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/kavindamadhujith-University of Oulu3545/FusionLIVO/krf7aewv/file_stream: {\"error\":\"project kavindamadhujith-University of Oulu3545/FusionLIVO not found while streaming file\"}"}
+{"time":"2025-03-25T10:39:31.388019143+02:00","level":"INFO","msg":"stream: closing","id":"krf7aewv"}
+{"time":"2025-03-25T10:39:31.388074661+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-25T10:39:31.389189748+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-25T10:39:31.58348059+02:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-03-25T10:39:31.583641941+02:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"run FusionLIVO/krf7aewv not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-03-25T10:39:32.172533124+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-25T10:39:32.172681618+02:00","level":"INFO","msg":"handler: closed","stream_id":"krf7aewv"}
+{"time":"2025-03-25T10:39:32.172730523+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"krf7aewv"}
+{"time":"2025-03-25T10:39:32.172750039+02:00","level":"INFO","msg":"sender: closed","stream_id":"krf7aewv"}
+{"time":"2025-03-25T10:39:32.172853911+02:00","level":"INFO","msg":"stream: closed","id":"krf7aewv"}

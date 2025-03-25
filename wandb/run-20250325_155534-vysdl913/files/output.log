@@ -1,0 +1,19 @@
+Sequence 00: Found 4541 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/00/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/00_rel_poses.npy
+Sequence 02: Found 4661 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/02/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/02_rel_poses.npy
+Sequence 08: Found 4071 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/08/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/08_rel_poses.npy
+Sequence 09: Found 1591 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/09/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/09_rel_poses.npy
+Computing image statistics...
+Traceback (most recent call last):
+  File "train.py", line 129, in <module>
+    train("config.yaml")
+  File "train.py", line 32, in train
+    train_dataset = DataManager(cfg, mode="train", monocular=True)  # Pass cfg instead of config
+  File "/home/krkavinda/FusionLIVO/data_manager.py", line 20, in __init__
+    self.img_mean, self.img_std = self.compute_img_stats()
+  File "/home/krkavinda/FusionLIVO/data_manager.py", line 91, in compute_img_stats
+    img = cv2.imread(left_path)
+KeyboardInterrupt

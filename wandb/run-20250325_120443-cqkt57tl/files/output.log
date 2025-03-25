@@ -1,0 +1,49 @@
+Sequence 00: Found 4541 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/00/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/00_rel_poses.npy
+Sequence 02: Found 4661 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/02/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/02_rel_poses.npy
+Sequence 08: Found 4071 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/08/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/08_rel_poses.npy
+Sequence 09: Found 1591 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/09/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/09_rel_poses.npy
+Sequence 03: Found 801 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/03/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/03_rel_poses.npy
+Sequence 04: Found 271 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/04/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/04_rel_poses.npy
+Sequence 05: Found 2761 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/05/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/05_rel_poses.npy
+Sequence 06: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/06/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/06_rel_poses.npy
+Sequence 07: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/07/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/07_rel_poses.npy
+Sequence 10: Found 1201 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/10/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/10_rel_poses.npy
+Train Epoch 1/5: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 928/928 [01:30<00:00, 10.21it/s, loss=0.0123, t_loss=0.0081, r_loss=4.23e-5]
+Val Epoch 1/5: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 451/451 [00:26<00:00, 17.10it/s, loss=0.226, t_loss=0.222, r_loss=4e-5]
+Val Batch 0 - Pred: tensor([[ 6.9548e-04, -1.6113e-02,  1.0388e+00,  9.8734e-01,  2.9801e-03,
+         -6.0711e-03],
+        [ 1.3524e-05, -1.5690e-02,  1.0196e+00,  9.9129e-01,  3.5669e-03,
+         -9.2702e-03],
+        [-6.6321e-04, -1.5291e-02,  9.5791e-01,  9.8970e-01,  4.2537e-03,
+         -1.0625e-02],
+        [-3.6717e-04, -1.5424e-02,  9.4354e-01,  9.8841e-01,  4.3785e-03,
+         -1.0648e-02]], device='cuda:0'), GT: tensor([[-1.1011e-02, -1.7122e-02,  9.6171e-01,  1.0000e+00,  7.1221e-04,
+          1.5335e-03, -7.0557e-04,  9.9999e-01, -4.3270e-03, -1.5366e-03,
+          4.3259e-03,  9.9999e-01],
+        [-7.4530e-03, -1.1757e-02,  9.6322e-01,  1.0000e+00, -2.0976e-03,
+          5.9639e-04,  2.0981e-03,  1.0000e+00, -8.9582e-04, -5.9451e-04,
+          8.9707e-04,  1.0000e+00],
+        [-1.6158e-02, -2.5323e-02,  9.6328e-01,  1.0000e+00, -1.4821e-03,
+          7.3706e-05,  1.4818e-03,  9.9999e-01,  4.3120e-03, -8.0094e-05,
+         -4.3119e-03,  9.9999e-01],
+        [-1.5758e-02, -3.0697e-02,  9.6025e-01,  1.0000e+00, -1.4889e-03,
+         -7.5144e-04,  1.4937e-03,  9.9998e-01,  6.4597e-03,  7.4181e-04,
+         -6.4609e-03,  9.9998e-01]], device='cuda:0')
+Traceback (most recent call last):
+  File "train.py", line 183, in <module>
+    train("config.yaml")
+  File "train.py", line 157, in train
+    pred_traj, scale = align_trajectories(pred_traj, gt_traj)
+  File "train.py", line 32, in align_trajectories
+    H = pred_centered.T @ gt_centered
+ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 28849 is different from 14425)

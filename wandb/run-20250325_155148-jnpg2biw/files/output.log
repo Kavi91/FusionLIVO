@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "train.py", line 129, in <module>
+    train("config.yaml")
+  File "train.py", line 32, in train
+    train_dataset = DataManager(config, mode="train", monocular=True)
+  File "/home/krkavinda/FusionLIVO/data_manager.py", line 13, in __init__
+    self.data_dir = config['data_dir']
+TypeError: string indices must be integers

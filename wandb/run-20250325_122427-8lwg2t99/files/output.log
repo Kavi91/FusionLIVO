@@ -1,0 +1,75 @@
+Sequence 00: Found 4541 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/00/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/00_rel_poses.npy
+Sequence 02: Found 4661 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/02/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/02_rel_poses.npy
+Sequence 08: Found 4071 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/08/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/08_rel_poses.npy
+Sequence 09: Found 1591 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/09/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/09_rel_poses.npy
+Sequence 03: Found 801 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/03/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/03_rel_poses.npy
+Sequence 04: Found 271 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/04/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/04_rel_poses.npy
+Sequence 05: Found 2761 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/05/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/05_rel_poses.npy
+Sequence 06: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/06/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/06_rel_poses.npy
+Sequence 07: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/07/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/07_rel_poses.npy
+Sequence 10: Found 1201 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/10/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/10_rel_poses.npy
+Train Epoch 1/5: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 464/464 [03:04<00:00,  2.51it/s, loss=0.0131, t_loss=0.00671, r_loss=6.43e-5]
+Val Epoch 1/5:   0%|                                                                                                                  | 0/225 [00:04<?, ?it/s, loss=0.0185, t_loss=0.00923, r_loss=9.22e-5]
+Val Batch 0 - Pred: tensor([[-6.1636e-03, -1.9463e-02,  1.0155e+00, -2.5449e-03,  5.1924e-03,
+         -3.8416e-04],
+        [-6.7578e-03, -1.7583e-02,  1.0130e+00, -3.7614e-03,  9.5243e-03,
+          2.0676e-04],
+        [-7.4973e-03, -1.7639e-02,  1.0107e+00, -3.4842e-03,  1.0939e-02,
+         -2.2877e-04],
+        [-8.5179e-03, -1.8341e-02,  9.9840e-01, -3.7711e-03,  1.0710e-02,
+          6.5249e-04],
+        [-9.0635e-03, -2.0060e-02,  1.0637e+00, -3.8545e-03,  1.1278e-02,
+          9.8793e-04],
+        [-6.5202e-03, -2.0750e-02,  1.0499e+00, -3.4628e-03,  1.2385e-02,
+          2.0102e-03],
+        [-4.5846e-03, -2.0557e-02,  1.0205e+00, -3.9228e-03,  1.3484e-02,
+          2.5697e-03],
+        [-4.4096e-03, -1.8958e-02,  9.8039e-01, -4.3547e-03,  1.3086e-02,
+          2.1695e-03],
+        [-2.9649e-03, -1.9561e-02,  9.8121e-01, -4.5854e-03,  1.3758e-02,
+          2.8874e-03]], device='cuda:0'), GT: tensor([[-1.1011e-02, -1.7122e-02,  9.6171e-01,  4.3260e-03,  1.5366e-03,
+         -7.0557e-04],
+        [-7.4530e-03, -1.1757e-02,  9.6322e-01,  8.9707e-04,  5.9451e-04,
+          2.0981e-03],
+        [-1.6158e-02, -2.5323e-02,  9.6328e-01, -4.3119e-03,  8.0094e-05,
+          1.4818e-03],
+        [-1.5758e-02, -3.0697e-02,  9.6025e-01, -6.4609e-03, -7.4181e-04,
+          1.4937e-03],
+        [-1.0254e-02, -3.2451e-02,  9.5806e-01,  8.7465e-04, -1.3854e-03,
+          4.4226e-03],
+        [-1.1496e-02, -2.6897e-02,  9.3229e-01,  3.0391e-03, -1.0773e-03,
+          2.7375e-03],
+        [-1.0029e-02, -1.0089e-02,  9.3743e-01,  3.0616e-03, -8.3619e-04,
+          5.6179e-04],
+        [-1.2426e-02, -1.2804e-02,  9.2981e-01,  6.4307e-04, -8.1168e-04,
+         -6.2762e-04],
+        [-9.6327e-03, -9.2086e-03,  9.2938e-01, -2.3173e-03, -9.2578e-04,
+         -6.4988e-04]], device='cuda:0')
+Epoch 1: Scale factor = 3.2173
+Traceback (most recent call last):
+  File "train.py", line 205, in <module>
+    train("config.yaml")
+  File "train.py", line 181, in train
+    t_rel, r_rel = compute_kitti_trajectory_metrics(pred_traj, gt_traj)
+  File "train.py", line 76, in compute_kitti_trajectory_metrics
+    r_rel = np.arccos(np.clip((np.trace(p.T @ g) - 1) / 2, -1, 1))
+  File "<__array_function__ internals>", line 180, in clip
+  File "/home/krkavinda/Fusion-env/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2152, in clip
+    return _wrapfunc(a, 'clip', a_min, a_max, out=out, **kwargs)
+  File "/home/krkavinda/Fusion-env/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+  File "/home/krkavinda/Fusion-env/lib/python3.8/site-packages/numpy/core/_methods.py", line 134, in _clip
+    if _clip_dep_is_scalar_nan(min):
+  File "/home/krkavinda/Fusion-env/lib/python3.8/site-packages/numpy/core/_methods.py", line 97, in _clip_dep_is_scalar_nan
+    return um.isnan(a)
+KeyboardInterrupt

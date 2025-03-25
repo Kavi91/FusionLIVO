@@ -1,0 +1,92 @@
+Sequence 00: Found 4541 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/00/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/00_rel_poses.npy
+Sequence 02: Found 4661 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/02/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/02_rel_poses.npy
+Sequence 08: Found 4071 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/08/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/08_rel_poses.npy
+Sequence 09: Found 1591 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/09/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/09_rel_poses.npy
+Sequence 03: Found 801 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/03/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/03_rel_poses.npy
+Sequence 04: Found 271 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/04/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/04_rel_poses.npy
+Sequence 05: Found 2761 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/05/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/05_rel_poses.npy
+Sequence 06: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/06/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/06_rel_poses.npy
+Sequence 07: Found 1101 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/07/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/07_rel_poses.npy
+Sequence 10: Found 1201 frames in /home/krkavinda/Datasets/KITTI_raw/kitti_data/scan/10/image_02
+Loaded precomputed relative poses from /home/krkavinda/Datasets/KITTI_raw/kitti_data/poses/10_rel_poses.npy
+Train Epoch 1/50: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 928/928 [01:31<00:00, 10.17it/s, loss=0.0316, t_loss=0.0256, r_loss=5.97e-5]
+Val Epoch 1/50: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 63/63 [00:04<00:00, 13.66it/s, loss=0.125, t_loss=0.118, r_loss=7.16e-5]
+Val Batch 0 - Pred: tensor([[ 6.5093e-04, -1.7615e-02,  6.9964e-01, -1.1532e-03,  3.1698e-04,
+         -1.6831e-03],
+        [ 1.1904e-02, -1.5596e-02,  8.6967e-01, -7.3346e-04,  1.3290e-03,
+         -4.0821e-03],
+        [ 1.6038e-02, -1.4646e-02,  9.7140e-01,  2.3410e-03,  2.2646e-04,
+         -4.7479e-03],
+        [ 1.9041e-02, -1.1987e-02,  1.0379e+00,  4.6397e-03, -1.9786e-03,
+         -3.9358e-03]], device='cuda:0'), GT: tensor([[-1.1011e-02, -1.7122e-02,  9.6171e-01,  4.3260e-03,  1.5366e-03,
+         -7.0557e-04],
+        [-7.4530e-03, -1.1757e-02,  9.6322e-01,  8.9707e-04,  5.9451e-04,
+          2.0981e-03],
+        [-1.6158e-02, -2.5323e-02,  9.6328e-01, -4.3119e-03,  8.0094e-05,
+          1.4818e-03],
+        [-1.5758e-02, -3.0697e-02,  9.6025e-01, -6.4609e-03, -7.4181e-04,
+          1.4937e-03]], device='cuda:0')
+Epoch 1: Number of poses - Pred: 1000, GT: 1000
+Epoch 1: Metric computation time = 11.23s, Memory usage = 11.9%
+Epoch 1: Train Loss=0.0601 (t=0.0473, r=0.0001), Val Loss=0.0550 (t=0.0496, r=0.0001), t_rel%=21417.23, r_rel°/100m=53.02
+Train Epoch 2/50: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 928/928 [01:33<00:00,  9.95it/s, loss=0.032, t_loss=0.0237, r_loss=8.31e-5]
+Val Epoch 2/50: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 63/63 [00:04<00:00, 13.69it/s, loss=0.0975, t_loss=0.096, r_loss=1.42e-5]
+Val Batch 0 - Pred: tensor([[ 3.2213e-03, -1.7198e-02,  7.9763e-01, -7.9991e-04,  2.8708e-03,
+         -4.8714e-04],
+        [ 1.1461e-02, -1.3921e-02,  9.2768e-01, -3.6216e-04,  5.8805e-03,
+         -1.5605e-03],
+        [ 1.3256e-02, -1.2557e-02,  9.8953e-01,  2.3461e-03,  5.9803e-03,
+         -1.5751e-03],
+        [ 1.4694e-02, -9.7100e-03,  1.0304e+00,  4.7598e-03,  4.2740e-03,
+         -1.1067e-03]], device='cuda:0'), GT: tensor([[-1.1011e-02, -1.7122e-02,  9.6171e-01,  4.3260e-03,  1.5366e-03,
+         -7.0557e-04],
+        [-7.4530e-03, -1.1757e-02,  9.6322e-01,  8.9707e-04,  5.9451e-04,
+          2.0981e-03],
+        [-1.6158e-02, -2.5323e-02,  9.6328e-01, -4.3119e-03,  8.0094e-05,
+          1.4818e-03],
+        [-1.5758e-02, -3.0697e-02,  9.6025e-01, -6.4609e-03, -7.4181e-04,
+          1.4937e-03]], device='cuda:0')
+Epoch 2: Number of poses - Pred: 1000, GT: 1000
+Epoch 2: Metric computation time = 10.89s, Memory usage = 11.6%
+Epoch 2: Train Loss=0.0362 (t=0.0261, r=0.0001), Val Loss=0.0467 (t=0.0414, r=0.0001), t_rel%=12482.99, r_rel°/100m=58.67
+Train Epoch 3/50: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 928/928 [01:35<00:00,  9.75it/s, loss=0.0426, t_loss=0.027, r_loss=0.000156]
+Val Epoch 3/50: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 63/63 [00:04<00:00, 13.62it/s, loss=0.11, t_loss=0.108, r_loss=1.43e-5]
+Val Batch 0 - Pred: tensor([[ 3.8714e-03, -1.7930e-02,  8.3850e-01, -1.5884e-03,  3.6960e-03,
+         -9.5182e-04],
+        [ 1.0405e-02, -1.5197e-02,  9.3921e-01, -1.8723e-03,  6.8693e-03,
+         -2.0050e-03],
+        [ 1.1031e-02, -1.3723e-02,  9.6687e-01, -8.6245e-05,  7.0008e-03,
+         -2.0826e-03],
+        [ 1.1269e-02, -1.0408e-02,  9.9128e-01,  1.4991e-03,  4.6700e-03,
+         -1.5090e-03]], device='cuda:0'), GT: tensor([[-1.1011e-02, -1.7122e-02,  9.6171e-01,  4.3260e-03,  1.5366e-03,
+         -7.0557e-04],
+        [-7.4530e-03, -1.1757e-02,  9.6322e-01,  8.9707e-04,  5.9451e-04,
+          2.0981e-03],
+        [-1.6158e-02, -2.5323e-02,  9.6328e-01, -4.3119e-03,  8.0094e-05,
+          1.4818e-03],
+        [-1.5758e-02, -3.0697e-02,  9.6025e-01, -6.4609e-03, -7.4181e-04,
+          1.4937e-03]], device='cuda:0')
+Epoch 3: Number of poses - Pred: 1000, GT: 1000
+Epoch 3: Metric computation time = 10.35s, Memory usage = 11.3%
+Epoch 3: Train Loss=0.0288 (t=0.0203, r=0.0001), Val Loss=0.0350 (t=0.0292, r=0.0001), t_rel%=13468.15, r_rel°/100m=36.09
+Train Epoch 4/50:   3%|██▉                                                                                                     | 26/928 [00:04<02:32,  5.93it/s, loss=0.0215, t_loss=0.014, r_loss=7.46e-5]
+Traceback (most recent call last):
+  File "train.py", line 137, in <module>
+  File "train.py", line 70, in train
+    model.eval()
+  File "/home/krkavinda/Fusion-env/lib/python3.8/site-packages/torch/_tensor.py", line 521, in backward
+    torch.autograd.backward(
+  File "/home/krkavinda/Fusion-env/lib/python3.8/site-packages/torch/autograd/__init__.py", line 289, in backward
+    _engine_run_backward(
+  File "/home/krkavinda/Fusion-env/lib/python3.8/site-packages/torch/autograd/graph.py", line 769, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

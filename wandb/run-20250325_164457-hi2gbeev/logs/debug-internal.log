@@ -1,0 +1,15 @@
+{"time":"2025-03-25T16:44:57.390961816+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/krkavinda/FusionLIVO/wandb/run-20250325_164457-hi2gbeev/logs/debug-core.log"}
+{"time":"2025-03-25T16:44:57.493399766+02:00","level":"INFO","msg":"created new stream","id":"hi2gbeev"}
+{"time":"2025-03-25T16:44:57.493434322+02:00","level":"INFO","msg":"stream: started","id":"hi2gbeev"}
+{"time":"2025-03-25T16:44:57.493473381+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"hi2gbeev"}
+{"time":"2025-03-25T16:44:57.49351891+02:00","level":"INFO","msg":"handler: started","stream_id":"hi2gbeev"}
+{"time":"2025-03-25T16:44:57.493694354+02:00","level":"INFO","msg":"sender: started","stream_id":"hi2gbeev"}
+{"time":"2025-03-25T16:44:57.858787523+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-25T16:48:50.951759415+02:00","level":"INFO","msg":"stream: closing","id":"hi2gbeev"}
+{"time":"2025-03-25T16:48:50.953152443+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-25T16:48:50.961318944+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-25T16:48:52.5144665+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-25T16:48:52.800675445+02:00","level":"INFO","msg":"handler: closed","stream_id":"hi2gbeev"}
+{"time":"2025-03-25T16:48:52.800740028+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hi2gbeev"}
+{"time":"2025-03-25T16:48:52.803318196+02:00","level":"INFO","msg":"sender: closed","stream_id":"hi2gbeev"}
+{"time":"2025-03-25T16:48:52.803404385+02:00","level":"INFO","msg":"stream: closed","id":"hi2gbeev"}
