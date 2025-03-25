@@ -1,0 +1,34 @@
+# Data paths
+data_dir: "/home/krkavinda/Datasets/KITTI_raw/kitti_data/scan"  # Root directory for scan data
+calib_dir: "/home/krkavinda/Datasets/KITTI_raw/kitti_data/calib"  # Calibration files
+pose_dir: "/home/krkavinda/Datasets/KITTI_raw/kitti_data/poses"   # Ground truth poses
+sequences:
+  train: ["00", "02", "08", "09"]      # Training sequences (from DeepVO)
+  val: ["03", "04", "05", "06", "07", "10"] # Validation sequences (from DeepVO)
+  test: ["01"]                         # Test sequence
+
+# Subdirectories for modalities
+modalities:
+  left_rgb: "image_02"      # Left camera images
+  right_rgb: "image_03"     # Right camera images
+  depth: "depth"            # Depth images (optional)
+  velodyne: "velodyne"      # LiDAR data (optional)
+
+# Model hyperparameters
+seq_len: 2
+img_height: 184             # New height
+img_width: 608              # New width
+hidden_size: 1000
+cnn_backbone: "resnet18"
+
+# Training hyperparameters
+batch_size: 8
+epochs: 50
+learning_rate: 0.0001
+weight_decay: 0.00001
+
+# Logging and saving
+log_project: "stereo_deepvo"
+model_save_path: "stereo_deepvo.pth"
+pose_save_dir: "pred_poses"
+plot_save_dir: "plots"
